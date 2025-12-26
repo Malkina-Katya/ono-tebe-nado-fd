@@ -15,10 +15,10 @@
       <nav>
         <ul class="header__menu">
           <li class="header__li__no-circle">
-            <a>главная</a>
+            <a class="menu__link header__link link_active">главная</a>
           </li>
-          <li><a class="header__link">посмотреть лоты</a></li>
-          <li><a class="header__link">об аукционе</a></li>
+          <li><a class="menu__link header__link">посмотреть лоты</a></li>
+          <li><a class="menu__link header__link">об аукционе</a></li>
         </ul>
       </nav>
       <a
@@ -27,17 +27,17 @@
           src="./images/logo-black.svg"
           alt="Логотип"
       /></a>
-      <address class="header__address">
+      <address class="address address_align_end">
         <ul class="address__list">
           <li>
-            <a class="header__link" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
           </li>
           <li>
-            <a class="header__link" href="mailto:info@sobaka.ge"
+            <a class="address__link" href="mailto:info@sobaka.ge"
               >info@sobaka.ge</a
             >
           </li>
-          <li><a>наб. Принсенграхт 263- 265, Амстердам</a></li>
+          <li><span>наб. Принсенграхт 263- 265, Амстердам</span></li>
         </ul>
       </address>
     </header>
@@ -46,9 +46,9 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="title">
-          <span class="word-one uppercase-text">Oно</span>
-          <span class="word-two uppercase-text">Тебе</span>
-          <span class="word-three uppercase-text">Надо</span>
+          <span class="display-block title__word_left uppercase-text">Oно</span>
+          <span class="display-block title__word_center uppercase-text">Тебе</span>
+          <span class="display-block title__word_right uppercase-text">Надо</span>
         </h1>
         <div class="description">
           <p class="uppercase-text">Аукцион вещей, в которые никто не верил</p>
@@ -57,7 +57,7 @@
       </section>
 
       <section class="lots">
-        <h2 class="uppercase-text">Лоты</h2>
+        <h2 class="lots__title uppercase-text">Лоты</h2>
 
         <ul class="lots__card-list">
           <li>
@@ -113,12 +113,12 @@
           </li>
         </ul>
 
-        <a class="more-lots" href="link">посмотреть больше</a>
+        <a class="more-lots" href="#0">посмотреть больше</a>
       </section>
 
       <section class="about">
         <div class="about__column">
-          <a class="about__logo" href="link"
+          <a class="about__logo" href="#0"
             ><img
               class="about__logo-img"
               src="./images/logo-white.svg"
@@ -126,16 +126,16 @@
           /></a>
         </div>
         <div class="about__column">
-          <h4 class="uppercase-text about__title">Об аукционе</h4>
+          <h2 class="uppercase-text about__title">Об аукционе</h2>
           <div class="about__text">
-            <p class="paragraph__one">
+            <p class="paragraph paragraph__intro">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p class="paragraph__two">
+            <p class="paragraph paragraph__conclusion">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -150,44 +150,44 @@
     </main>
 
     <footer class="footer">
-      <address class="footer__address">
+      <address class="address address_align_start">
         <ul class="address__list">
           <li>
-            <a class="footer__menu-link" href="tel:+99995555555"
+            <a class="address__link" href="tel:+99995555555"
               >+9 999 555 5555</a
             >
           </li>
           <li>
-            <a class="footer__menu-link" href="mailto:info@sobaka.ge"
+            <a class="address__link" href="mailto:info@sobaka.ge"
               >info@sobaka.ge</a
             >
           </li>
-          <li><a>наб. Принсенграхт 263-265, Амстердам</a></li>
+          <li><span>наб. Принсенграхт 263-265, Амстердам</span></li>
         </ul>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item footer__menu-link_active">
-            <a>главная</a>
+          <li>
+            <a class="menu__link link_active">главная</a>
           </li>
-          <li class="footer__menu-list-item"><a>посмотреть лоты</a></li>
-          <li class="footer__menu-list-item"><a>об аукционе</a></li>
+          <li><a class="menu__link">посмотреть лоты</a></li>
+          <li><a class="menu__link">об аукционе</a></li>
         </ul>
       </nav>
 
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="linkyoutube"
+          <a href="#0"
             ><img class="footer__social-icon" src="./images/yt.svg" alt="Ютуб"
           /></a>
         </li>
         <li class="footer__social-list-item">
-          <a href="linkvk"
+          <a href="#0"
             ><img class="footer__social-icon" src="./images/vk.svg" alt="ВК"
           /></a>
         </li>
         <li class="footer__social-list-item">
-          <a href="linkpin"
+          <a href="#0"
             ><img
               class="footer__social-icon"
               src="./images/pinterest.svg"

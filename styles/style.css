@@ -1,8 +1,3 @@
-* {
-  margin:0;
-  padding:0;
-}
-
 .uppercase-text {
   text-transform: uppercase;
 }
@@ -28,10 +23,13 @@
   list-style: none;
 }
 
-.header__link {
-  margin-right: 1px;
+.menu__link {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.header__link {
+  margin-right: 1px;
 }
 
 .header__logo-image {
@@ -42,30 +40,44 @@
   margin-left: 1.2px;
 }
 
-.address__list {
-  list-style: none;
-}
-.header__address {
-  display: flex;
-  flex-direction: column;
-  justify-self: end;
-  align-items: flex-start; /* чтобы ссылки растягивались ТОЛЬКО на ширину текста */
-  max-width: 240px;
-  margin: 95px 0 100px 0;
+.address {
   font-size: 18px;
   font-style: normal;
   line-height: 24.5px;
   text-underline-offset: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+.address_align_end {
+  justify-self: end;
+  max-width: 240px;
+  margin: 95px 0 100px 0;
+}
+
+.address_align_start {
+  justify-self: start;
+  max-width: 264.5px;
+}
+
+.address__list {
+  list-style: none;
+}
+
+.address__link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   margin: 0;
   padding: 0 50px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
@@ -76,38 +88,39 @@
 }
 
 .title {
-  position: relative; /* без этого не сработает z-index */
+  position: relative; 
   z-index: 2;
-  padding: 165px 0 106px;
+  padding: 165px 0 102px;
   color: #fff;
   font-size: 100px;
   letter-spacing: 0.3em;
 }
 
-.word-one {
+.display-block{
   display: block;
+}
+
+.title__word_left {
   margin-left: 0px;
 }
 
-.word-two {
-  display: block;
+.title__word_center {
   width: 339px;
   margin-left: 330px;
   padding-top: 17px;
 }
 
-.word-three {
-  display: block;
+.title__word_right {
   width: 387px;
   margin-left: 613px;
   padding-top: 17px;
 }
 
 .description {
-  position: relative; /* без этого не сработает z-index */
+  position: relative;
   z-index: 1;
   display: flex;
-  justify-content: space-between; /* один эл-т прижат к левому краю, второй к правому */
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
   color:#fff;
@@ -127,7 +140,7 @@
   padding: 0 24px;
 }
 
-h2 {
+.lots__title {
   margin-bottom: 27px;
   margin-left: 40px;
   font-size: 40px;
@@ -135,7 +148,7 @@ h2 {
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap; /* 4-ая карточка будет переноситься */
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
 }
@@ -151,7 +164,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   padding: 48px 40px;
   color: #fff;
   background-position: center;
@@ -191,7 +204,7 @@ h2 {
 }
 
 .more-lots {
-  display: block;
+  display: inline-block;
   margin-top: 30px;
   margin-left: 40px;
   color:#000;
@@ -227,6 +240,7 @@ h2 {
   font-weight:700;
   font-size: 40px;
 }
+
 .about__text {
   display: flex;
   flex-direction: column;
@@ -234,14 +248,18 @@ h2 {
   margin-left: 25px;
   font-size: 20px;
 }
-.paragraph__one {
-  max-width: 688px;
+
+.paragraph {
   line-height: 24px;
 }
-.paragraph__two {
+
+.paragraph__intro {
+  max-width: 688px;
+}
+
+.paragraph__conclusion {
   max-width: 693px;
-  line-height: 24px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .footer {
@@ -250,15 +268,6 @@ h2 {
   margin: 0 0 82px;
   padding: 0 50px;
 
-}
-
-.footer__address {
-  justify-self: start;
-  max-width: 264.5px;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24.5px;
-  text-underline-offset: 4px;
 }
 
 .footer__menu {
@@ -273,14 +282,10 @@ h2 {
   list-style: none;
 }
 
-.footer__menu-list-item {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.footer__menu-link_active {
+.link_active {
   text-decoration: none;
 }
+
 
 .footer__social-list {
   display: flex;
