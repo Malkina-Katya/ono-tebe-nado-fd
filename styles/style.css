@@ -1,12 +1,14 @@
 .uppercase-text {
   text-transform: uppercase;
 }
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 0 50px;
 }
+
 .header__menu {
   display: flex;
   gap: 8.85px;
@@ -41,13 +43,13 @@
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 18px;
   font-style: normal;
   line-height: 24.5px;
   text-underline-offset: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .address_align_end {
@@ -76,8 +78,8 @@
   margin: 0;
   padding: 0 50px;
   background-image: url("../images/cover.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -88,7 +90,7 @@
 }
 
 .title {
-  position: relative; 
+  position: relative;
   z-index: 2;
   padding: 165px 0 102px;
   color: #fff;
@@ -96,7 +98,7 @@
   letter-spacing: 0.3em;
 }
 
-.display-block{
+.display-block {
   display: block;
 }
 
@@ -123,7 +125,7 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
-  color:#fff;
+  color: #fff;
   font-size: 22px;
   word-spacing: 18.5px;
 }
@@ -131,7 +133,7 @@
 .bet-button {
   border: 1px solid #fff;
   padding: 12px 32px 12px;
-  color:#fff;
+  color: #fff;
   background: transparent;
 }
 
@@ -207,7 +209,7 @@
   display: inline-block;
   margin-top: 30px;
   margin-left: 40px;
-  color:#000;
+  color: #000;
   font-size: 20px;
   text-decoration: underline 1px;
   text-underline-offset: 5px;
@@ -229,6 +231,7 @@
   border-radius: 50%;
   background-color: #000;
 }
+
 .about__logo-img {
   width: 148px;
   height: auto;
@@ -237,7 +240,7 @@
 .about__title {
   margin: 136px 0 100px;
   margin-left: 25px;
-  font-weight:700;
+  font-weight: 700;
   font-size: 40px;
 }
 
@@ -267,7 +270,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 0 82px;
   padding: 0 50px;
-
 }
 
 .footer__menu {
@@ -286,7 +288,6 @@
   text-decoration: none;
 }
 
-
 .footer__social-list {
   display: flex;
   justify-self: end;
@@ -295,6 +296,6 @@
 }
 
 .footer__social-icon {
-width: 48px;
-height: 48px;
+  width: 48px;
+  height: 48px;
 }
